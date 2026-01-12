@@ -35,6 +35,10 @@ export default function ProductDetailsPage() {
     fetchProduct();
   }, [id]);
 
+  if (!product) {
+    return null;
+  }
+
   return (
     <div>
       <Navbar />
